@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'optionsdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.2.1
+** Created by: Qt User Interface Compiler version 4.8.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,20 +10,20 @@
 #define UI_OPTIONSDIALOG_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCheckBox>
-#include <QtWidgets/QDialog>
-#include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QTabWidget>
-#include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QWidget>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QCheckBox>
+#include <QtGui/QDialog>
+#include <QtGui/QHBoxLayout>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
+#include <QtGui/QPushButton>
+#include <QtGui/QSpacerItem>
+#include <QtGui/QTabWidget>
+#include <QtGui/QVBoxLayout>
+#include <QtGui/QWidget>
 #include "bitcoinamountfield.h"
 #include "qvalidatedlineedit.h"
 #include "qvaluecombobox.h"
@@ -87,35 +87,35 @@ public:
     void setupUi(QDialog *OptionsDialog)
     {
         if (OptionsDialog->objectName().isEmpty())
-            OptionsDialog->setObjectName(QStringLiteral("OptionsDialog"));
+            OptionsDialog->setObjectName(QString::fromUtf8("OptionsDialog"));
         OptionsDialog->resize(540, 380);
         OptionsDialog->setModal(true);
         verticalLayout = new QVBoxLayout(OptionsDialog);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         tabWidget = new QTabWidget(OptionsDialog);
-        tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setTabPosition(QTabWidget::North);
         tabMain = new QWidget();
-        tabMain->setObjectName(QStringLiteral("tabMain"));
+        tabMain->setObjectName(QString::fromUtf8("tabMain"));
         verticalLayout_Main = new QVBoxLayout(tabMain);
-        verticalLayout_Main->setObjectName(QStringLiteral("verticalLayout_Main"));
+        verticalLayout_Main->setObjectName(QString::fromUtf8("verticalLayout_Main"));
         transactionFeeInfoLabel = new QLabel(tabMain);
-        transactionFeeInfoLabel->setObjectName(QStringLiteral("transactionFeeInfoLabel"));
+        transactionFeeInfoLabel->setObjectName(QString::fromUtf8("transactionFeeInfoLabel"));
         transactionFeeInfoLabel->setTextFormat(Qt::PlainText);
         transactionFeeInfoLabel->setWordWrap(true);
 
         verticalLayout_Main->addWidget(transactionFeeInfoLabel);
 
         horizontalLayout_1_Main = new QHBoxLayout();
-        horizontalLayout_1_Main->setObjectName(QStringLiteral("horizontalLayout_1_Main"));
+        horizontalLayout_1_Main->setObjectName(QString::fromUtf8("horizontalLayout_1_Main"));
         transactionFeeLabel = new QLabel(tabMain);
-        transactionFeeLabel->setObjectName(QStringLiteral("transactionFeeLabel"));
+        transactionFeeLabel->setObjectName(QString::fromUtf8("transactionFeeLabel"));
         transactionFeeLabel->setTextFormat(Qt::PlainText);
 
         horizontalLayout_1_Main->addWidget(transactionFeeLabel);
 
         transactionFee = new BitcoinAmountField(tabMain);
-        transactionFee->setObjectName(QStringLiteral("transactionFee"));
+        transactionFee->setObjectName(QString::fromUtf8("transactionFee"));
 
         horizontalLayout_1_Main->addWidget(transactionFee);
 
@@ -127,7 +127,7 @@ public:
         verticalLayout_Main->addLayout(horizontalLayout_1_Main);
 
         bitcoinAtStartup = new QCheckBox(tabMain);
-        bitcoinAtStartup->setObjectName(QStringLiteral("bitcoinAtStartup"));
+        bitcoinAtStartup->setObjectName(QString::fromUtf8("bitcoinAtStartup"));
 
         verticalLayout_Main->addWidget(bitcoinAtStartup);
 
@@ -136,13 +136,13 @@ public:
         verticalLayout_Main->addItem(verticalSpacer_Main);
 
         horizontalLayout_2_Main = new QHBoxLayout();
-        horizontalLayout_2_Main->setObjectName(QStringLiteral("horizontalLayout_2_Main"));
+        horizontalLayout_2_Main->setObjectName(QString::fromUtf8("horizontalLayout_2_Main"));
         horizontalSpacer_2_Main = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_2_Main->addItem(horizontalSpacer_2_Main);
 
         resetButton = new QPushButton(tabMain);
-        resetButton->setObjectName(QStringLiteral("resetButton"));
+        resetButton->setObjectName(QString::fromUtf8("resetButton"));
         resetButton->setAutoDefault(false);
 
         horizontalLayout_2_Main->addWidget(resetButton);
@@ -152,53 +152,53 @@ public:
 
         tabWidget->addTab(tabMain, QString());
         tabNetwork = new QWidget();
-        tabNetwork->setObjectName(QStringLiteral("tabNetwork"));
+        tabNetwork->setObjectName(QString::fromUtf8("tabNetwork"));
         verticalLayout_Network = new QVBoxLayout(tabNetwork);
-        verticalLayout_Network->setObjectName(QStringLiteral("verticalLayout_Network"));
+        verticalLayout_Network->setObjectName(QString::fromUtf8("verticalLayout_Network"));
         mapPortUpnp = new QCheckBox(tabNetwork);
-        mapPortUpnp->setObjectName(QStringLiteral("mapPortUpnp"));
+        mapPortUpnp->setObjectName(QString::fromUtf8("mapPortUpnp"));
 
         verticalLayout_Network->addWidget(mapPortUpnp);
 
         connectSocks = new QCheckBox(tabNetwork);
-        connectSocks->setObjectName(QStringLiteral("connectSocks"));
+        connectSocks->setObjectName(QString::fromUtf8("connectSocks"));
 
         verticalLayout_Network->addWidget(connectSocks);
 
         horizontalLayout_Network = new QHBoxLayout();
-        horizontalLayout_Network->setObjectName(QStringLiteral("horizontalLayout_Network"));
+        horizontalLayout_Network->setObjectName(QString::fromUtf8("horizontalLayout_Network"));
         proxyIpLabel = new QLabel(tabNetwork);
-        proxyIpLabel->setObjectName(QStringLiteral("proxyIpLabel"));
+        proxyIpLabel->setObjectName(QString::fromUtf8("proxyIpLabel"));
         proxyIpLabel->setTextFormat(Qt::PlainText);
 
         horizontalLayout_Network->addWidget(proxyIpLabel);
 
         proxyIp = new QValidatedLineEdit(tabNetwork);
-        proxyIp->setObjectName(QStringLiteral("proxyIp"));
+        proxyIp->setObjectName(QString::fromUtf8("proxyIp"));
         proxyIp->setMaximumSize(QSize(140, 16777215));
 
         horizontalLayout_Network->addWidget(proxyIp);
 
         proxyPortLabel = new QLabel(tabNetwork);
-        proxyPortLabel->setObjectName(QStringLiteral("proxyPortLabel"));
+        proxyPortLabel->setObjectName(QString::fromUtf8("proxyPortLabel"));
         proxyPortLabel->setTextFormat(Qt::PlainText);
 
         horizontalLayout_Network->addWidget(proxyPortLabel);
 
         proxyPort = new QLineEdit(tabNetwork);
-        proxyPort->setObjectName(QStringLiteral("proxyPort"));
+        proxyPort->setObjectName(QString::fromUtf8("proxyPort"));
         proxyPort->setMaximumSize(QSize(55, 16777215));
 
         horizontalLayout_Network->addWidget(proxyPort);
 
         socksVersionLabel = new QLabel(tabNetwork);
-        socksVersionLabel->setObjectName(QStringLiteral("socksVersionLabel"));
+        socksVersionLabel->setObjectName(QString::fromUtf8("socksVersionLabel"));
         socksVersionLabel->setTextFormat(Qt::PlainText);
 
         horizontalLayout_Network->addWidget(socksVersionLabel);
 
         socksVersion = new QValueComboBox(tabNetwork);
-        socksVersion->setObjectName(QStringLiteral("socksVersion"));
+        socksVersion->setObjectName(QString::fromUtf8("socksVersion"));
 
         horizontalLayout_Network->addWidget(socksVersion);
 
@@ -215,16 +215,16 @@ public:
 
         tabWidget->addTab(tabNetwork, QString());
         tabWindow = new QWidget();
-        tabWindow->setObjectName(QStringLiteral("tabWindow"));
+        tabWindow->setObjectName(QString::fromUtf8("tabWindow"));
         verticalLayout_Window = new QVBoxLayout(tabWindow);
-        verticalLayout_Window->setObjectName(QStringLiteral("verticalLayout_Window"));
+        verticalLayout_Window->setObjectName(QString::fromUtf8("verticalLayout_Window"));
         minimizeToTray = new QCheckBox(tabWindow);
-        minimizeToTray->setObjectName(QStringLiteral("minimizeToTray"));
+        minimizeToTray->setObjectName(QString::fromUtf8("minimizeToTray"));
 
         verticalLayout_Window->addWidget(minimizeToTray);
 
         minimizeOnClose = new QCheckBox(tabWindow);
-        minimizeOnClose->setObjectName(QStringLiteral("minimizeOnClose"));
+        minimizeOnClose->setObjectName(QString::fromUtf8("minimizeOnClose"));
 
         verticalLayout_Window->addWidget(minimizeOnClose);
 
@@ -234,19 +234,19 @@ public:
 
         tabWidget->addTab(tabWindow, QString());
         tabDisplay = new QWidget();
-        tabDisplay->setObjectName(QStringLiteral("tabDisplay"));
+        tabDisplay->setObjectName(QString::fromUtf8("tabDisplay"));
         verticalLayout_Display = new QVBoxLayout(tabDisplay);
-        verticalLayout_Display->setObjectName(QStringLiteral("verticalLayout_Display"));
+        verticalLayout_Display->setObjectName(QString::fromUtf8("verticalLayout_Display"));
         horizontalLayout_1_Display = new QHBoxLayout();
-        horizontalLayout_1_Display->setObjectName(QStringLiteral("horizontalLayout_1_Display"));
+        horizontalLayout_1_Display->setObjectName(QString::fromUtf8("horizontalLayout_1_Display"));
         langLabel = new QLabel(tabDisplay);
-        langLabel->setObjectName(QStringLiteral("langLabel"));
+        langLabel->setObjectName(QString::fromUtf8("langLabel"));
         langLabel->setTextFormat(Qt::PlainText);
 
         horizontalLayout_1_Display->addWidget(langLabel);
 
         lang = new QValueComboBox(tabDisplay);
-        lang->setObjectName(QStringLiteral("lang"));
+        lang->setObjectName(QString::fromUtf8("lang"));
 
         horizontalLayout_1_Display->addWidget(lang);
 
@@ -254,15 +254,15 @@ public:
         verticalLayout_Display->addLayout(horizontalLayout_1_Display);
 
         horizontalLayout_2_Display = new QHBoxLayout();
-        horizontalLayout_2_Display->setObjectName(QStringLiteral("horizontalLayout_2_Display"));
+        horizontalLayout_2_Display->setObjectName(QString::fromUtf8("horizontalLayout_2_Display"));
         unitLabel = new QLabel(tabDisplay);
-        unitLabel->setObjectName(QStringLiteral("unitLabel"));
+        unitLabel->setObjectName(QString::fromUtf8("unitLabel"));
         unitLabel->setTextFormat(Qt::PlainText);
 
         horizontalLayout_2_Display->addWidget(unitLabel);
 
         unit = new QValueComboBox(tabDisplay);
-        unit->setObjectName(QStringLiteral("unit"));
+        unit->setObjectName(QString::fromUtf8("unit"));
 
         horizontalLayout_2_Display->addWidget(unit);
 
@@ -270,12 +270,12 @@ public:
         verticalLayout_Display->addLayout(horizontalLayout_2_Display);
 
         displayAddresses = new QCheckBox(tabDisplay);
-        displayAddresses->setObjectName(QStringLiteral("displayAddresses"));
+        displayAddresses->setObjectName(QString::fromUtf8("displayAddresses"));
 
         verticalLayout_Display->addWidget(displayAddresses);
 
         coinControlFeatures = new QCheckBox(tabDisplay);
-        coinControlFeatures->setObjectName(QStringLiteral("coinControlFeatures"));
+        coinControlFeatures->setObjectName(QString::fromUtf8("coinControlFeatures"));
 
         verticalLayout_Display->addWidget(coinControlFeatures);
 
@@ -288,13 +288,13 @@ public:
         verticalLayout->addWidget(tabWidget);
 
         horizontalLayout_Buttons = new QHBoxLayout();
-        horizontalLayout_Buttons->setObjectName(QStringLiteral("horizontalLayout_Buttons"));
+        horizontalLayout_Buttons->setObjectName(QString::fromUtf8("horizontalLayout_Buttons"));
         horizontalSpacer_1 = new QSpacerItem(40, 48, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_Buttons->addItem(horizontalSpacer_1);
 
         statusLabel = new QLabel(OptionsDialog);
-        statusLabel->setObjectName(QStringLiteral("statusLabel"));
+        statusLabel->setObjectName(QString::fromUtf8("statusLabel"));
         QFont font;
         font.setBold(true);
         font.setWeight(75);
@@ -309,18 +309,18 @@ public:
         horizontalLayout_Buttons->addItem(horizontalSpacer_2);
 
         okButton = new QPushButton(OptionsDialog);
-        okButton->setObjectName(QStringLiteral("okButton"));
+        okButton->setObjectName(QString::fromUtf8("okButton"));
 
         horizontalLayout_Buttons->addWidget(okButton);
 
         cancelButton = new QPushButton(OptionsDialog);
-        cancelButton->setObjectName(QStringLiteral("cancelButton"));
+        cancelButton->setObjectName(QString::fromUtf8("cancelButton"));
         cancelButton->setAutoDefault(false);
 
         horizontalLayout_Buttons->addWidget(cancelButton);
 
         applyButton = new QPushButton(OptionsDialog);
-        applyButton->setObjectName(QStringLiteral("applyButton"));
+        applyButton->setObjectName(QString::fromUtf8("applyButton"));
         applyButton->setAutoDefault(false);
 
         horizontalLayout_Buttons->addWidget(applyButton);
@@ -347,69 +347,69 @@ public:
 
     void retranslateUi(QDialog *OptionsDialog)
     {
-        OptionsDialog->setWindowTitle(QApplication::translate("OptionsDialog", "Options", 0));
-        transactionFeeInfoLabel->setText(QApplication::translate("OptionsDialog", "Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.", 0));
-        transactionFeeLabel->setText(QApplication::translate("OptionsDialog", "Pay transaction &fee", 0));
+        OptionsDialog->setWindowTitle(QApplication::translate("OptionsDialog", "Options", 0, QApplication::UnicodeUTF8));
+        transactionFeeInfoLabel->setText(QApplication::translate("OptionsDialog", "Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.", 0, QApplication::UnicodeUTF8));
+        transactionFeeLabel->setText(QApplication::translate("OptionsDialog", "Pay transaction &fee", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start MavrodiCoin after logging in to the system.", 0));
+        bitcoinAtStartup->setToolTip(QApplication::translate("OptionsDialog", "Automatically start MavrodiCoin after logging in to the system.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start MavrodiCoin on system login", 0));
+        bitcoinAtStartup->setText(QApplication::translate("OptionsDialog", "&Start MavrodiCoin on system login", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        resetButton->setToolTip(QApplication::translate("OptionsDialog", "Reset all client options to default.", 0));
+        resetButton->setToolTip(QApplication::translate("OptionsDialog", "Reset all client options to default.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        resetButton->setText(QApplication::translate("OptionsDialog", "&Reset Options", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tabMain), QApplication::translate("OptionsDialog", "&Main", 0));
+        resetButton->setText(QApplication::translate("OptionsDialog", "&Reset Options", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tabMain), QApplication::translate("OptionsDialog", "&Main", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the MavrodiCoin client port on the router. This only works when your router supports UPnP and it is enabled.", 0));
+        mapPortUpnp->setToolTip(QApplication::translate("OptionsDialog", "Automatically open the MavrodiCoin client port on the router. This only works when your router supports UPnP and it is enabled.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        mapPortUpnp->setText(QApplication::translate("OptionsDialog", "Map port using &UPnP", 0));
+        mapPortUpnp->setText(QApplication::translate("OptionsDialog", "Map port using &UPnP", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the MavrodiCoin network through a SOCKS proxy (e.g. when connecting through Tor).", 0));
+        connectSocks->setToolTip(QApplication::translate("OptionsDialog", "Connect to the MavrodiCoin network through a SOCKS proxy (e.g. when connecting through Tor).", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        connectSocks->setText(QApplication::translate("OptionsDialog", "&Connect through SOCKS proxy:", 0));
-        proxyIpLabel->setText(QApplication::translate("OptionsDialog", "Proxy &IP:", 0));
+        connectSocks->setText(QApplication::translate("OptionsDialog", "&Connect through SOCKS proxy:", 0, QApplication::UnicodeUTF8));
+        proxyIpLabel->setText(QApplication::translate("OptionsDialog", "Proxy &IP:", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        proxyIp->setToolTip(QApplication::translate("OptionsDialog", "IP address of the proxy (e.g. 127.0.0.1)", 0));
+        proxyIp->setToolTip(QApplication::translate("OptionsDialog", "IP address of the proxy (e.g. 127.0.0.1)", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        proxyPortLabel->setText(QApplication::translate("OptionsDialog", "&Port:", 0));
+        proxyPortLabel->setText(QApplication::translate("OptionsDialog", "&Port:", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        proxyPort->setToolTip(QApplication::translate("OptionsDialog", "Port of the proxy (e.g. 9050)", 0));
+        proxyPort->setToolTip(QApplication::translate("OptionsDialog", "Port of the proxy (e.g. 9050)", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        socksVersionLabel->setText(QApplication::translate("OptionsDialog", "SOCKS &Version:", 0));
+        socksVersionLabel->setText(QApplication::translate("OptionsDialog", "SOCKS &Version:", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        socksVersion->setToolTip(QApplication::translate("OptionsDialog", "SOCKS version of the proxy (e.g. 5)", 0));
+        socksVersion->setToolTip(QApplication::translate("OptionsDialog", "SOCKS version of the proxy (e.g. 5)", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        tabWidget->setTabText(tabWidget->indexOf(tabNetwork), QApplication::translate("OptionsDialog", "&Network", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tabNetwork), QApplication::translate("OptionsDialog", "&Network", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        minimizeToTray->setToolTip(QApplication::translate("OptionsDialog", "Show only a tray icon after minimizing the window.", 0));
+        minimizeToTray->setToolTip(QApplication::translate("OptionsDialog", "Show only a tray icon after minimizing the window.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        minimizeToTray->setText(QApplication::translate("OptionsDialog", "&Minimize to the tray instead of the taskbar", 0));
+        minimizeToTray->setText(QApplication::translate("OptionsDialog", "&Minimize to the tray instead of the taskbar", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        minimizeOnClose->setToolTip(QApplication::translate("OptionsDialog", "Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.", 0));
+        minimizeOnClose->setToolTip(QApplication::translate("OptionsDialog", "Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        minimizeOnClose->setText(QApplication::translate("OptionsDialog", "M&inimize on close", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tabWindow), QApplication::translate("OptionsDialog", "&Window", 0));
-        langLabel->setText(QApplication::translate("OptionsDialog", "User Interface &language:", 0));
+        minimizeOnClose->setText(QApplication::translate("OptionsDialog", "M&inimize on close", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tabWindow), QApplication::translate("OptionsDialog", "&Window", 0, QApplication::UnicodeUTF8));
+        langLabel->setText(QApplication::translate("OptionsDialog", "User Interface &language:", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting MavrodiCoin.", 0));
+        lang->setToolTip(QApplication::translate("OptionsDialog", "The user interface language can be set here. This setting will take effect after restarting MavrodiCoin.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        unitLabel->setText(QApplication::translate("OptionsDialog", "&Unit to show amounts in:", 0));
+        unitLabel->setText(QApplication::translate("OptionsDialog", "&Unit to show amounts in:", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        unit->setToolTip(QApplication::translate("OptionsDialog", "Choose the default subdivision unit to show in the interface and when sending coins.", 0));
+        unit->setToolTip(QApplication::translate("OptionsDialog", "Choose the default subdivision unit to show in the interface and when sending coins.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        displayAddresses->setToolTip(QApplication::translate("OptionsDialog", "Whether to show MavrodiCoin addresses in the transaction list or not.", 0));
+        displayAddresses->setToolTip(QApplication::translate("OptionsDialog", "Whether to show MavrodiCoin addresses in the transaction list or not.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        displayAddresses->setText(QApplication::translate("OptionsDialog", "&Display addresses in transaction list", 0));
+        displayAddresses->setText(QApplication::translate("OptionsDialog", "&Display addresses in transaction list", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        coinControlFeatures->setToolTip(QApplication::translate("OptionsDialog", "Whether to show coin control features or not.", 0));
+        coinControlFeatures->setToolTip(QApplication::translate("OptionsDialog", "Whether to show coin control features or not.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        coinControlFeatures->setText(QApplication::translate("OptionsDialog", "Display coin &control features (experts only!)", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tabDisplay), QApplication::translate("OptionsDialog", "&Display", 0));
+        coinControlFeatures->setText(QApplication::translate("OptionsDialog", "Display coin &control features (experts only!)", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tabDisplay), QApplication::translate("OptionsDialog", "&Display", 0, QApplication::UnicodeUTF8));
         statusLabel->setText(QString());
-        okButton->setText(QApplication::translate("OptionsDialog", "&OK", 0));
-        cancelButton->setText(QApplication::translate("OptionsDialog", "&Cancel", 0));
-        applyButton->setText(QApplication::translate("OptionsDialog", "&Apply", 0));
+        okButton->setText(QApplication::translate("OptionsDialog", "&OK", 0, QApplication::UnicodeUTF8));
+        cancelButton->setText(QApplication::translate("OptionsDialog", "&Cancel", 0, QApplication::UnicodeUTF8));
+        applyButton->setText(QApplication::translate("OptionsDialog", "&Apply", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
